@@ -1,0 +1,354 @@
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+  url("../fonts/montserrat-regular.woff2") format("woff2"),
+  url("../fonts/montserrat-regular.woff") format("woff"),
+  url("../fonts/montserrat-regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: local('Montserrat Medium'), local('Montserrat-Medium'),
+  url("../fonts/montserrat-500.woff2") format("woff2"),
+  url("../fonts/montserrat-500.woff") format("woff"),
+  url("../fonts/montserrat-500.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+  url("../fonts/montserrat-600.woff2") format("woff2"),
+  url("../fonts/montserrat-600.woff") format("woff"),
+  url("../fonts/montserrat-600.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+  url("../fonts/montserrat-700.woff2") format("woff2"),
+  url("../fonts/montserrat-700.woff") format("woff"),
+  url("../fonts/montserrat-700.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Poiret One";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local('Poiret One Regular'), local('Poiret One-Regular'),
+  url("../fonts/poiret-one-regular.woff2") format("woff2"),
+  url("../fonts/poiret-one-regular.woff") format("woff"),
+  url("../fonts/poiret-one-regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Alegreya SC";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local('Alegreya SC Regular'), local('Alegreya SC-Regular'),
+  url("../fonts/alegreya-sc-regular.woff2") format("woff2"),
+  url("../fonts/alegreya-sc-regular.woff") format("woff"),
+  url("../fonts/alegreya-sc-regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Alegreya SC";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: local('Alegreya SC Bold'), local('Alegreya SC-Bold'),
+  url("../fonts/alegreya-sc-700.woff2") format("woff2"),
+  url("../fonts/alegreya-sc-700.woff") format("woff"),
+  url("../fonts/alegreya-sc-700.ttf") format("ttf");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  /*css - переменные*/
+  --white: #ffffff;
+  --black: #000000;
+  --black-opacity: 0, 0, 0;
+  --grey: #B2B2B2;
+  --pink: #FBAB9A;
+  --dark: #333333;
+}
+/* применение var(--color-blue); */
+
+.visually-hidden:not(:focus):not(active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-container {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--grey);
+  font-style: normal;
+  font-weight: 400;
+  height: 100vh;
+  background-size: cover;
+  background-image: url("../img/background.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(64.02% 41.85% at 114.02% 58.15%, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%), rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+a {
+  text-decoration: none;
+  color: var(--grey);
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background-color: rgba(var(--black-opacity), 0.2);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 99;
+}
+
+.header__container {
+  max-width: 1610px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 115px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  height: 100%;
+}
+
+.header__logo-img {
+  display: block;
+}
+
+.navigation__list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 25px;
+}
+
+.navigation__icon {
+  display: block;
+  margin: 0 10px 0 0;
+}
+
+.navigation__text {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 13px;
+}
+
+/* Мобильное меню - бургер */
+
+.header__hamburger {
+  display: none;
+}
+
+/* Промо-блок */
+
+.promo {
+  background-size: cover;
+  height: 100vh;
+  box-shadow: 0 0 0 1000px rgba(196, 190, 192, 0.4) inset;
+  position: relative;
+  z-index: 1;
+}
+
+.promo:after {
+  content: '';
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7));
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* Соц. сети */
+
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 480px) {
+  .main {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .navigation {
+    display: none;
+    width: 100%;
+  }
+
+  .navigation__item,
+  .navigation__link {
+    width: 100%;
+  }
+
+  .navigation.open {
+    display: block;
+  }
+
+  .header__hamburger {
+    flex-shrink: 0;
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding: 5px 12px;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    cursor: pointer;
+    outline: none;
+    margin: 0 0 0 auto;
+  }
+
+  .header__hamburger span {
+    width: 100%;
+    background-color: var(--white);
+    height: 2px;
+    display: block;
+    position: relative;
+  }
+
+  .header__hamburger span:after,
+  .header__hamburger span:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--white);
+  }
+
+  .header__hamburger span:before {
+    top: -9px;
+  }
+
+  .header__hamburger span:after {
+    bottom: -9px;
+  }
+
+  .header__hamburger.open span {
+    background: transparent;
+  }
+
+  .header__hamburger.open span:before,
+  .header__hamburger.open span:after {
+    transition-duration: 0.2s, 0.2s;
+    transition-delay: 0.2s, 0s;
+  }
+
+  .header__hamburger.open span:before {
+    transition-property: top, transform;
+  }
+
+  .header__hamburger.open span:after {
+    transition-property: bottom, transform;
+  }
+
+  .header__hamburger.open span:before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .header__hamburger.open span:after {
+    bottom: 0;
+    transform: rotate(-45deg);
+  }
+
+  .header__hamburger.open span:before,
+  .header__hamburger.open span:after {
+    transition-delay: 0s, 0.2s;
+  }
+}
+
+/*//////////////*/
+
+
+
