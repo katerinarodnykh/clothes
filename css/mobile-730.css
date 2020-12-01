@@ -1,0 +1,44 @@
+@media (max-width: 730px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .main-container {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .link {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .footer {
+        padding: 40px 0 20px 0;
+    }
+
+    .footer__title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .footer__contacts-unit {
+        display: none;
+    }
+
+    .footer .socials__item {
+        margin: 0 30px 0 0;
+    }
+
+    .footer__icon {
+        width: 200px;
+    }
+
+    .footer__contacts-item {
+        margin: 0 0 10px 0;
+    }
+
+    .footer .socials {
+        margin: 0;
+    }
+}

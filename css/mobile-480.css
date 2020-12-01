@@ -1,0 +1,33 @@
+@media (max-width: 480px) {
+    .footer__icon {
+        display: none;
+    }
+
+    .footer__block--contacts {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer__icon-text {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .footer__contacts-item {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer .socials {
+        justify-content: center;
+    }
+
+    .footer .socials__item,
+    .footer .socials__item:last-child {
+        margin: 0 15px;
+    }
+
+    .footer__block--socials {
+        margin: 0 0 10px 0;
+    }
+}
