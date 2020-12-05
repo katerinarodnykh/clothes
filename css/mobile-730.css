@@ -1,5 +1,6 @@
 @media (max-width: 730px) {
-    .container {
+    .container,
+    .wrapper {
         padding: 0 15px;
     }
 
@@ -8,7 +9,21 @@
         line-height: 20px;
     }
 
+    .header__container {
+        padding: 0;
+    }
+
     .link {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .promo__title {
+        font-size: 54px;
+        line-height: 60px;
+    }
+
+    .promo__text {
         font-size: 20px;
         line-height: 24px;
     }

@@ -9,6 +9,14 @@
 }
 
 @media (max-width:1300px) {
+    .header__container {
+        height: 90px;
+    }
+
+    .navigation__link {
+        padding: 20px 14px;
+    }
+
     .footer {
         padding: 50px 0 30px 0;
     }
@@ -40,5 +48,121 @@
         max-width: unset;
         font-size: 16px;
         line-height: 20px;
+    }
+}
+
+@media (max-width:1200px) {
+    .navigation__link {
+        padding: 20px 10px;
+    }
+
+    .navigation__text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .navigation {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 90px;
+        left: 0;
+    }
+
+    .navigation__item,
+    .navigation__link {
+        width: 100%;
+    }
+
+    .navigation.open {
+        display: block;
+    }
+
+    .navigation__list {
+        flex-direction: column;
+    }
+
+    .header.open,
+    .navigation__list {
+        background-color: rgba(var(--black-opacity), 0.9);
+    }
+
+    .navigation__link {
+        justify-content: center;
+        padding: 14px 15px;
+    }
+
+    .header__hamburger {
+        flex-shrink: 0;
+        display: block;
+        width: 66px;
+        height: 60px;
+        padding: 5px 15px;
+        background-color: transparent;
+        border: 0;
+        border-radius: 0;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .header__hamburger span {
+        width: 100%;
+        background-color: var(--white);
+        height: 2px;
+        display: block;
+        position: relative;
+    }
+
+    .header__hamburger span:after,
+    .header__hamburger span:before {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--grey);
+    }
+
+    .header__hamburger span:before {
+        top: -9px;
+    }
+
+    .header__hamburger span:after {
+        bottom: -9px;
+    }
+
+    .header__hamburger.open span {
+        background: transparent;
+    }
+
+    .header__hamburger.open span:before,
+    .header__hamburger.open span:after {
+        transition-duration: 0.2s, 0.2s;
+        transition-delay: 0.2s, 0s;
+    }
+
+    .header__hamburger.open span:before {
+        transition-property: top, transform;
+    }
+
+    .header__hamburger.open span:after {
+        transition-property: bottom, transform;
+    }
+
+    .header__hamburger.open span:before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+
+    .header__hamburger.open span:after {
+        bottom: 0;
+        transform: rotate(-45deg);
+    }
+
+    .header__hamburger.open span:before,
+    .header__hamburger.open span:after {
+        transition-delay: 0s, 0.2s;
     }
 }

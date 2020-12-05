@@ -70,13 +70,13 @@
             </symbol>
         </svg>
         <!--Вставка <svg class="" width="" height=""><use xlink:href="#id"></use></svg>-->
-        <header class="header header--promo">
+        <header class="header js-header header--promo">
             <div class="header__container">
-                <button class="header__hamburger"><span></span></button>
                 <a class="header__logo" href="/">
                     <img class="header__logo-img" src="img/logo.svg" width="229" height="47" alt="Логотип">
                 </a>
-                <nav class="navigation">
+                <button class="header__hamburger js-hamburger"><span></span></button>
+                <nav class="navigation js-navigation">
                     <ul class="navigation__list">
                         <li class="navigation__item navigation__item--active">
                             <a class="navigation__link" href="#">
@@ -121,9 +121,9 @@
         <main class="main">
             <!--Главная страница-->
             <h1 class="visually-hidden">Надеть одежду. Ателье и химчистка</h1>
-            <?php //TODO: Загружаемая картинка ?>
+            <?php //TODO: Загружаемая картинка? ?>
             <section class="promo" style="background-image: url('img/dev-img.png')">
-                <div class="container promo__container">
+                <div class="wrapper promo__wrapper">
                     <div class="promo__content">
                         <h2 class="promo__title">Надеть одежду</h2>
                         <div class="promo__text">Ателье & химчистка</div>
@@ -148,6 +148,36 @@
                         <li class="socials__item socials__item--tel">
                             <a class="socials__link" href="#" target="_blank">
                                 <svg class="socials__icon" width="37" height="30"><use xlink:href="#tel"></use></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="about block">
+                <img class="about__icon" src="img/puton-text.svg" width="61" height="547" alt="Надеть одежду">
+                <div class="wrapper about__wrapper">
+                    <h2 class="title">О нас</h2>
+                    <div class="about__description">
+                        «Надеть одежду» — это не просто ателье. Это проект новой формации, который создан для оптимизации твоего времени.
+                        Мы возьмем на себя все твои хлопоты: ремонт, чистку и утюжка одежды, поможем тебе сделать жизнь проще и приятнее!
+                    </div>
+                    <ul class="about__list">
+                        <li class="about__item">
+                            <a class="about__link" href="#">
+                                <img class="about__img" src="img/cleaning.svg" width="292" height="329" alt="Иконка химчистки">
+                                <h3 class="about__title">Химчистка</h3>
+                            </a>
+                        </li>
+                        <li class="about__item">
+                            <a class="about__link" href="#">
+                                <img class="about__img" src="img/sewing.svg" width="292" height="329" alt="Иконка пошива одежды">
+                                <h3 class="about__title">Пошив одежды</h3>
+                            </a>
+                        </li>
+                        <li class="about__item">
+                            <a class="about__link" href="#">
+                                <img class="about__img" src="img/repair.svg" width="292" height="329" alt="Иконка ремонта одежды">
+                                <h3 class="about__title">Ремонт одежды</h3>
                             </a>
                         </li>
                     </ul>
@@ -267,6 +297,6 @@
             <img class="footer__icon" src="img/footer-icon.svg" width="250" height="522" alt="Иконка костюма">
         </footer>
     </div>
-    <script src="js/one-level-mobile-menu.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

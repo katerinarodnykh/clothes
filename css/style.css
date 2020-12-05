@@ -127,7 +127,7 @@ ul {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 18px;
   line-height: 22px;
-  letter-spacing: 1px;
+  letter-spacing: 0.1em;
   color: var(--grey);
   font-style: normal;
   font-weight: 400;
@@ -168,6 +168,13 @@ img {
   padding: 0 30px;
 }
 
+.wrapper {
+  width: 100%;
+  max-width: 1524px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
 .link {
   font-size: 24px;
   line-height: 28px;
@@ -175,6 +182,48 @@ img {
   font-weight: 700;
   text-decoration: underline;
   cursor: pointer;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 274px;
+  height: 60px;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: var(--dark);
+  background-color: var(--pink);
+  text-transform: uppercase;
+  appearance: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 16px 22px rgba(var(--black-opacity), 0.05);
+  z-index: 1;
+  border-radius: 5px;
+  position: relative;
+  letter-spacing: 0.01em;
+}
+
+.button:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  filter: blur(5px);
+  z-index: -1;
+  background-color: var(--pink);
+}
+
+.button--border {
+  border: 2px solid var(--pink);
+  background-color: transparent;
+  color: var(--pink);
 }
 
 .header {
@@ -186,12 +235,13 @@ img {
 }
 
 .header__container {
-  max-width: 1610px;
+  max-width: 1625px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 115px;
+  padding: 0 15px;
 }
 
 .header__logo {
@@ -225,8 +275,8 @@ img {
 .navigation__text {
   font-weight: 500;
   text-transform: uppercase;
-  color: var(--white);
   font-size: 13px;
+  white-space: nowrap;
 }
 
 /* Мобильное меню - бургер */
@@ -243,6 +293,9 @@ img {
   box-shadow: 0 0 0 1000px rgba(196, 190, 192, 0.4) inset;
   position: relative;
   z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  padding: 180px 0;
 }
 
 .promo:after {
@@ -254,6 +307,57 @@ img {
   height: 100%;
   top: 0;
   left: 0;
+}
+
+.promo__wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.promo__title {
+  font-family: "Poiret One", "Roboto", sans-serif;
+  font-size: 64px;
+  line-height: 70px;
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
+}
+
+.promo__text {
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 60px 0;
+}
+
+.promo .socials {
+  flex-direction: column;
+}
+
+.promo .socials__item {
+  margin: 10px 0;
+}
+
+.promo .socials__item--inst .socials__icon {
+  width: 18px;
+  height: 18px;
+}
+
+.promo .socials__item--fb .socials__icon {
+  width: 10px;
+  height: 20px;
+}
+
+.promo .socials__item--vk .socials__icon {
+  width: 24px;
+  height: 14px;
+}
+
+.promo .socials__item--tel .socials__icon {
+  width: 22px;
+  height: 18px;
 }
 
 /* Соц. сети */
@@ -400,102 +504,60 @@ img {
   margin: 0 auto;
 }
 
-@media (max-width: 480px) {
-  .main {
-    width: 100%;
-    min-width: 100%;
-  }
+/* О нас */
 
-  .navigation {
-    display: none;
-    width: 100%;
-  }
-
-  .navigation__item,
-  .navigation__link {
-    width: 100%;
-  }
-
-  .navigation.open {
-    display: block;
-  }
-
-  .header__hamburger {
-    flex-shrink: 0;
-    display: block;
-    width: 60px;
-    height: 60px;
-    padding: 5px 12px;
-    background-color: transparent;
-    border: 0;
-    border-radius: 0;
-    cursor: pointer;
-    outline: none;
-    margin: 0 0 0 auto;
-  }
-
-  .header__hamburger span {
-    width: 100%;
-    background-color: var(--white);
-    height: 2px;
-    display: block;
-    position: relative;
-  }
-
-  .header__hamburger span:after,
-  .header__hamburger span:before {
-    content: "";
-    position: absolute;
-    display: block;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: var(--white);
-  }
-
-  .header__hamburger span:before {
-    top: -9px;
-  }
-
-  .header__hamburger span:after {
-    bottom: -9px;
-  }
-
-  .header__hamburger.open span {
-    background: transparent;
-  }
-
-  .header__hamburger.open span:before,
-  .header__hamburger.open span:after {
-    transition-duration: 0.2s, 0.2s;
-    transition-delay: 0.2s, 0s;
-  }
-
-  .header__hamburger.open span:before {
-    transition-property: top, transform;
-  }
-
-  .header__hamburger.open span:after {
-    transition-property: bottom, transform;
-  }
-
-  .header__hamburger.open span:before {
-    top: 0;
-    transform: rotate(45deg);
-  }
-
-  .header__hamburger.open span:after {
-    bottom: 0;
-    transform: rotate(-45deg);
-  }
-
-  .header__hamburger.open span:before,
-  .header__hamburger.open span:after {
-    transition-delay: 0s, 0.2s;
-  }
+.block {
+  padding: 50px 0;
 }
 
-/*//////////////*/
+.about {
+  position: relative;
+}
 
+.about__icon {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
 
+.title {
+  font-family: "Poiret One", "Roboto", sans-serif;
+  font-size: 30px;
+  line-height: 40px;
+  margin: 0 0 50px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about__description {
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 660px;
+  text-align: center;
+  margin: 0 auto 60px auto;
+}
+
+.about__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about__img {
+  display: block;
+  margin: 0 0 10px 0;
+}
+
+.about__title {
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+}
 
