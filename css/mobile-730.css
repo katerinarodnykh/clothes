@@ -1,6 +1,7 @@
 @media (max-width: 730px) {
     .container,
-    .wrapper {
+    .wrapper,
+    .wrap {
         padding: 0 15px;
     }
 
@@ -62,7 +63,8 @@
         padding: 0 5px;
     }
 
-    .about__description {
+    .about__description,
+    .top__description {
         font-size: 14px;
         line-height: 18px;
     }

@@ -175,6 +175,13 @@ img {
   padding: 0 30px;
 }
 
+.wrap {
+  width: 100%;
+  max-width: 1625px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
 .link {
   font-size: 24px;
   line-height: 28px;
@@ -229,9 +236,12 @@ img {
 .header {
   background-color: rgba(var(--black-opacity), 0.2);
   width: 100%;
+  z-index: 99;
+}
+
+.header--promo {
   position: absolute;
   top: 0;
-  z-index: 99;
 }
 
 .header__container {
@@ -522,6 +532,15 @@ img {
 
 .title {
   font-family: "Poiret One", "Roboto", sans-serif;
+  font-size: 40px;
+  line-height: 50px;
+  margin: 0 0 40px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: "Poiret One", "Roboto", sans-serif;
   font-size: 30px;
   line-height: 40px;
   margin: 0 0 50px 0;
@@ -529,12 +548,25 @@ img {
   text-align: center;
 }
 
-.about__description {
+.about__description,
+.top__description {
   font-size: 16px;
   line-height: 24px;
   max-width: 660px;
   text-align: center;
   margin: 0 auto 60px auto;
+}
+
+.top {
+  margin: 30px 0 100px 0;
+}
+
+.top__description {
+  margin: 0 auto;
+}
+
+.top__wrap {
+  position: relative;
 }
 
 .about__list {
@@ -560,5 +592,192 @@ img {
   text-transform: uppercase;
   text-align: center;
   font-weight: 400;
+}
+
+/* Магазин */
+
+.purchases {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 45px;
+  height: 90px;
+  padding: 15px 5px;
+  text-align: center;
+  color: var(--pink);
+  font-weight: 700;
+  font-size: 18px;
+  border: 1px solid var(--pink);
+  border-radius: 7px;
+  position: absolute;
+  top: 10px;
+  right: 45px;
+}
+
+.purchases__icon {
+  fill: var(--pink);
+}
+
+.shop__wrap {
+  display: flex;
+}
+
+.menu {
+  width: 450px;
+  flex-shrink: 0;
+  padding: 0 15px 0 0;
+}
+
+.menu__link {
+  font-family: "Poiret One", "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 12px 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: var(--pink);
+  display: block;
+}
+
+.menu__item:first-child .menu__link {
+  padding-top: 0;
+}
+
+.shop__content {
+  padding: 0 0 60px 0;
+}
+
+.shop__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shop__item {
+  padding: 0 35px 100px 35px;
+}
+
+.shop__link {
+  display: block;
+  width: 260px;
+}
+
+.shop__picture {
+  position: relative;
+  margin: 0 0 15px 0;
+}
+
+.shop__bag {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: var(--pink);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark);
+  right: 10px;
+  bottom: 14px;
+  appearance: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.shop__icon {
+  fill: var(--dark);
+}
+
+.shop__title {
+  height: 46px;
+  display: flex;
+  align-items: center;
+  font-family: "Poiret One", "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0 0 15px 0;
+}
+
+.shop__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.shop__price {
+  color: var(--pink);
+}
+
+/* Пагинация */
+
+.pagination__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.white-block .pagination__list {
+  margin: 0;
+}
+
+.pagination__double-arrow,
+.pagination__arrow {
+  stroke: var(--pink);
+}
+
+.pagination__arrow--left,
+.pagination__double-arrow--right {
+  transform: rotate(180deg);
+}
+
+.pagination__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  outline: none;
+  color: var(--pink);
+}
+
+.pagination__item {
+  margin: 0 0 10px 0;
+}
+
+.pagination__item--number {
+  margin: 0 7px;
+}
+
+.pagination__item--number .pagination__link {
+  border: 1px solid var(--pink);
+  border-radius: 5px;
+}
+
+.pagination__item--active .pagination__link {
+  background-color: var(--pink);
+  transition: 0.2s;
+  color: var(--dark);
+}
+
+.pagination__item--disabled .pagination__double-arrow,
+.pagination__item--disabled .pagination__arrow {
+  stroke: var(--grey);
+}
+
+.pagination__item--dots .pagination__link {
+  color: var(--pink);
+  letter-spacing: 6px;
+  align-items: flex-end;
 }
 

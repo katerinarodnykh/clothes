@@ -68,9 +68,20 @@
             <symbol id="tel" viewBox="0 0 37 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M14.4177 19.772L13.8222 28.148C14.6742 28.148 15.0432 27.782 15.4857 27.3425L19.4802 23.525L27.7571 29.5865C29.2751 30.4324 30.3446 29.9869 30.7541 28.19L36.1871 2.73209L36.1886 2.73059C36.6701 0.486606 35.3771 -0.39089 33.8981 0.159607L1.96325 12.386C-0.216238 13.232 -0.183239 14.447 1.59275 14.9975L9.75721 17.537L28.7216 5.67058C29.6141 5.07958 30.4256 5.40658 29.7581 5.99758L14.4177 19.772Z" fill="#FBAB9A"/>
             </symbol>
+            <symbol id="bag" width="23" height="22" viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.1675 19.4076L20.7953 5.93066H2.41254L1.04031 19.4076H0V21.1881H0.859155H5.51104H7.72354H19.3342H20.263H22.3486H22.9833V19.4076H22.1675ZM17.2043 7.45761C17.638 7.45761 17.9894 7.75603 17.9894 8.12437C17.9894 8.49245 17.638 8.79112 17.2043 8.79112C16.7706 8.79112 16.4192 8.4927 16.4192 8.12437C16.4192 7.75603 16.7709 7.45761 17.2043 7.45761ZM4.99413 8.12412C4.99413 7.75578 5.34552 7.45736 5.77923 7.45736C6.21294 7.45736 6.56433 7.75578 6.56433 8.12412C6.56433 8.4922 6.21294 8.79087 5.77923 8.79087C5.34552 8.79087 4.99413 8.49245 4.99413 8.12412Z"/>
+                <path d="M7.89038 4.5831C8.85399 2.66151 10.1672 1.55952 11.4934 1.55952C12.8194 1.55952 14.1326 2.66151 15.0959 4.5831L15.1623 4.7149H17.117L16.9836 4.42023C15.7131 1.61114 13.7119 0 11.4937 0C9.27501 0 7.27403 1.61114 6.00299 4.42023L5.86963 4.7149H7.82429L7.89038 4.5831Z"/>
+            </symbol>
+            <symbol id="double-arrow" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.7363 17.1611L6.73633 12.1611L11.7363 7.16113" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18.7363 17.1611L13.7363 12.1611L18.7363 7.16113" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </symbol>
+            <symbol id="arrow" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.46289 18.1157L15.4629 12.1157L9.46289 6.11572" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </symbol>
         </svg>
         <!--Вставка <svg class="" width="" height=""><use xlink:href="#id"></use></svg>-->
-        <header class="header js-header header--promo">
+        <header class="header js-header">
             <div class="header__container">
                 <a class="header__logo" href="/">
                     <img class="header__logo-img" src="img/logo.svg" width="229" height="47" alt="Логотип">
@@ -120,69 +131,177 @@
         </header>
         <main class="main">
             <!--Главная страница-->
-            <h1 class="visually-hidden">Надеть одежду. Ателье и химчистка</h1>
-            <?php //TODO: Загружаемая картинка? ?>
-            <section class="promo" style="background-image: url('img/dev-img.png')">
-                <div class="wrapper promo__wrapper">
-                    <div class="promo__content">
-                        <h2 class="promo__title">Надеть одежду</h2>
-                        <div class="promo__text">Ателье & химчистка</div>
-                        <a class="button" href="#">Перейти в прайс-лист</a>
+            <h1 class="visually-hidden">Надеть одежду. Магазин</h1>
+            <div class="top">
+                <div class="wrap top__wrap">
+                    <h2 class="title">Магазин</h2>
+                    <div class="top__description">
+                        Здесь ты найдёшь всё, что тебе нужно!<br>
+                        От одной пуговицы до полной капсулы.
                     </div>
-                    <ul class="socials">
-                        <li class="socials__item socials__item--inst">
-                            <a class="socials__link" href="#" target="_blank">
-                                <svg class="socials__icon" width="37" height="37"><use xlink:href="#inst"></use></svg>
-                            </a>
+                    <a class="purchases" href="#">
+                        <svg class="purchases__icon" width="23" height="22"><use xlink:href="#bag"></use></svg>
+                        <div class="purchases__number">(0)</div>
+                    </a>
+                </div>
+            </div>
+            <div class="shop">
+                <div class="wrap shop__wrap">
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Женская одежда (31)</a>
                         </li>
-                        <li class="socials__item socials__item--fb">
-                            <a class="socials__link" href="#" target="_blank">
-                                <svg class="socials__icon" width="23" height="42"><use xlink:href="#fb"></use></svg>
-                            </a>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Мужская одежда (14)</a>
                         </li>
-                        <li class="socials__item socials__item--vk">
-                            <a class="socials__link" href="#" target="_blank">
-                                <svg class="socials__icon" width="51" height="30"><use xlink:href="#vk"></use></svg>
-                            </a>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Сумки (9)</a>
                         </li>
-                        <li class="socials__item socials__item--tel">
-                            <a class="socials__link" href="#" target="_blank">
-                                <svg class="socials__icon" width="37" height="30"><use xlink:href="#tel"></use></svg>
-                            </a>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Постельное бельё (8)</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Нижнее бельё (26)</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Аксессуары (17)</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Украшения ручной работы (31)</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Фурнитура (81)</a>
                         </li>
                     </ul>
-                </div>
-            </section>
-            <section class="about block">
-                <img class="about__icon" src="img/puton-text.svg" width="61" height="547" alt="Надеть одежду">
-                <div class="wrapper about__wrapper">
-                    <h3 class="subtitle">О нас</h3>
-                    <div class="about__description">
-                        «Надеть одежду» — это не просто ателье. Это проект новой формации, который создан для оптимизации твоего времени.
-                        Мы возьмем на себя все твои хлопоты: ремонт, чистку и утюжка одежды, поможем тебе сделать жизнь проще и приятнее!
+                    <div class="shop__content">
+                        <ul class="shop__list">
+                            <li class="shop__item">
+                                <a class="shop__link" href="#">
+                                    <div class="shop__picture">
+                                        <img class="shop__img" src="img/dev-img-2.png" width="260" height="286" alt="Фото товара">
+                                        <button class="shop__bag">+<svg class="shop__icon" width="23" height="22"><use xlink:href="#bag"></use></svg></button>
+                                    </div>
+                                    <div class="shop__title">Чёрные расклёшенные брюки в полоску</div>
+                                    <div class="shop__bottom">
+                                        <div class="shop__size">Размер: 46</div>
+                                        <div class="shop__price">7 890 руб</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="shop__item">
+                                <a class="shop__link" href="#">
+                                    <div class="shop__picture">
+                                        <img class="shop__img" src="img/dev-img-2.png" width="260" height="286" alt="Фото товара">
+                                        <button class="shop__bag">+<svg class="shop__icon" width="23" height="22"><use xlink:href="#bag"></use></svg></button>
+                                    </div>
+                                    <div class="shop__title">Кофта</div>
+                                    <div class="shop__bottom">
+                                        <div class="shop__size">Размер: 46</div>
+                                        <div class="shop__price">7 890 руб</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="shop__item">
+                                <a class="shop__link" href="#">
+                                    <div class="shop__picture">
+                                        <img class="shop__img" src="img/dev-img-2.png" width="260" height="286" alt="Фото товара">
+                                        <button class="shop__bag">+<svg class="shop__icon" width="23" height="22"><use xlink:href="#bag"></use></svg></button>
+                                    </div>
+                                    <div class="shop__title">Платье</div>
+                                    <div class="shop__bottom">
+                                        <div class="shop__size">Размер: 46</div>
+                                        <div class="shop__price">7 890 руб</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="shop__item">
+                                <a class="shop__link" href="#">
+                                    <div class="shop__picture">
+                                        <img class="shop__img" src="img/dev-img-2.png" width="260" height="286" alt="Фото товара">
+                                        <button class="shop__bag">+<svg class="shop__icon" width="23" height="22"><use xlink:href="#bag"></use></svg></button>
+                                    </div>
+                                    <div class="shop__title">Платье</div>
+                                    <div class="shop__bottom">
+                                        <div class="shop__size">Размер: 46</div>
+                                        <div class="shop__price">7 890 руб</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="shop__item">
+                                <a class="shop__link" href="#">
+                                    <div class="shop__picture">
+                                        <img class="shop__img" src="img/dev-img-2.png" width="260" height="286" alt="Фото товара">
+                                        <button class="shop__bag">+<svg class="shop__icon" width="23" height="22"><use xlink:href="#bag"></use></svg></button>
+                                    </div>
+                                    <div class="shop__title">Платье</div>
+                                    <div class="shop__bottom">
+                                        <div class="shop__size">Размер: 46</div>
+                                        <div class="shop__price">7 890 руб</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="shop__item">
+                                <a class="shop__link" href="#">
+                                    <div class="shop__picture">
+                                        <img class="shop__img" src="img/dev-img-2.png" width="260" height="286" alt="Фото товара">
+                                        <button class="shop__bag">+<svg class="shop__icon" width="23" height="22"><use xlink:href="#bag"></use></svg></button>
+                                    </div>
+                                    <div class="shop__title">Платье</div>
+                                    <div class="shop__bottom">
+                                        <div class="shop__size">Размер: 46</div>
+                                        <div class="shop__price">7 890 руб</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="pagination">
+                            <ul class="pagination__list">
+                                <li class="pagination__item pagination__item--disabled">
+                                    <a class="pagination__link">
+                                        <svg class="pagination__double-arrow" width="25" height="25"><use xlink:href="#double-arrow"></use></svg>
+                                    </a>
+                                </li>
+                                <li class="pagination__item pagination__item--disabled">
+                                    <a class="pagination__link">
+                                        <svg class="pagination__arrow pagination__arrow--left" width="25" height="25"><use xlink:href="#arrow"></use></svg>
+                                    </a>
+                                </li>
+                                <li class="pagination__item pagination__item--active pagination__item--number">
+                                    <a class="pagination__link">1</a>
+                                </li>
+                                <li class="pagination__item pagination__item--number">
+                                    <a class="pagination__link">2</a>
+                                </li>
+                                <li class="pagination__item pagination__item--number">
+                                    <a class="pagination__link">3</a>
+                                </li>
+                                <li class="pagination__item pagination__item--number">
+                                    <a class="pagination__link">4</a>
+                                </li>
+                                <li class="pagination__item pagination__item--dots">
+                                    <a class="pagination__link">...</a>
+                                </li>
+                                <li class="pagination__item pagination__item--number">
+                                    <a class="pagination__link">10</a>
+                                </li>
+                                <li class="pagination__item pagination__item--number">
+                                    <a class="pagination__link">20</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link">
+                                        <svg class="pagination__arrow" width="25" height="25"><use xlink:href="#arrow"></use></svg>
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link">
+                                        <svg class="pagination__double-arrow pagination__double-arrow--right" width="25" height="25"><use xlink:href="#double-arrow"></use></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <ul class="about__list">
-                        <li class="about__item">
-                            <a class="about__link" href="#">
-                                <img class="about__img" src="img/cleaning.svg" width="292" height="329" alt="Иконка химчистки">
-                                <h3 class="about__title">Химчистка</h3>
-                            </a>
-                        </li>
-                        <li class="about__item">
-                            <a class="about__link" href="#">
-                                <img class="about__img" src="img/sewing.svg" width="292" height="329" alt="Иконка пошива одежды">
-                                <h3 class="about__title">Пошив одежды</h3>
-                            </a>
-                        </li>
-                        <li class="about__item">
-                            <a class="about__link" href="#">
-                                <img class="about__img" src="img/repair.svg" width="292" height="329" alt="Иконка ремонта одежды">
-                                <h3 class="about__title">Ремонт одежды</h3>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
-            </section>
+            </div>
         </main>
         <footer class="footer">
             <div class="container footer__container">
