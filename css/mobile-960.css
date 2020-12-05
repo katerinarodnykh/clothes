@@ -29,4 +29,17 @@
     .footer__block {
         width: 100%;
     }
+
+    .about__list {
+        justify-content: space-between;
+    }
+
+    .about__title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .about__img {
+        width: 200px;
+    }
 }

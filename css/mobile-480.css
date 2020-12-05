@@ -49,6 +49,33 @@
     .footer__block--socials {
         margin: 0 0 10px 0;
     }
+
+    .title {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .about__description {
+        margin: 0 0 20px 0;
+    }
+
+    .about__list {
+        flex-direction: column;
+    }
+
+    .about__item {
+        width: unset;
+    }
+
+    .about__img {
+        width: 292px;
+        margin: 0;
+    }
+
+    .about__title {
+        font-size: 20px;
+        line-height: 24px;
+    }
 }
 
 @media (max-width: 400px) {
