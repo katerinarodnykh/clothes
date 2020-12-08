@@ -73,4 +73,29 @@
         font-size: 16px;
         line-height: 20px;
     }
+
+    .modal {
+        max-width: unset;
+        top: 0;
+        left: 0;
+        margin-left: unset;
+        padding: 40px 15px;
+    }
+
+    .modal__close {
+        top: 10px;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .form__title {
+        font-size: 30px;
+        line-height: 34px;
+        margin: 0 0 20px 0;
+    }
+
+    .form__group {
+        margin: 0 0 14px 0;
+    }
 }

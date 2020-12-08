@@ -6,6 +6,10 @@
     .footer__icon {
         display: none;
     }
+
+    .modal {
+        top: 5vh;
+    }
 }
 
 @media (max-width:1300px) {

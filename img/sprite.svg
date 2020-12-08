@@ -64,5 +64,8 @@
     <symbol id="arrow" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M9.46289 18.1157L15.4629 12.1157L9.46289 6.11572" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
+    <symbol id="close" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13 1.3L11.7 0L6.5 5.2L1.3 0L0 1.3L5.2 6.5L0 11.7L1.3 13L6.5 7.8L11.7 13L13 11.7L7.8 6.5L13 1.3Z" fill="#B2B2B2"/>
+    </symbol>
 </svg>
 <!--Вставка <svg class="" width="" height=""><use xlink:href="img/sprite.svg#id"></use></svg>-->
