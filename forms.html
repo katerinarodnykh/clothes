@@ -379,6 +379,57 @@
         <?php //TODO: Сообщение после отправки ?>
         <div class="form__success">Спасибо!<br> Ваши данные успешно отправлены</div>
     </form>
+    <!--Заявка на сотрудничество-->
+    <form class="form">
+        <h3 class="form__title">Заявка на сотрудничество</h3>
+        <div class="form__group">
+            <input class="form__input" placeholder="Имя" type="text">
+            <div class="form__help">Ошибка</div>
+        </div>
+        <div class="form__group">
+            <input class="form__input" placeholder="E-mail" type="email">
+            <div class="form__help"></div>
+        </div>
+        <div class="form__group">
+            <input class="form__input" placeholder="Телефон +7" type="tel">
+            <div class="form__help"></div>
+        </div>
+        <div class="form__group">
+            <input class="form__input" placeholder="Название компании" type="text">
+            <div class="form__help"></div>
+        </div>
+        <div class="form__group">
+            <input class="form__input" placeholder="Сфера деятельности" type="text">
+            <div class="form__help"></div>
+        </div>
+        <div class="form__group">
+            <select style="display: none;">
+                <option>1</option>
+                <option>2</option>
+            </select>
+            <div class="dropdown">
+                <div class="dropdown__title">
+                    <a class="dropdown__link">Вид сотрудничества</a>
+                </div>
+                <ul class="dropdown__options">
+                    <li class="dropdown__option">
+                        <a class="dropdown__link">1</a>
+                    </li>
+                    <li class="dropdown__option">
+                        <a class="dropdown__link">2</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="form__help"></div>
+        </div>
+        <div class="form__group">
+            <textarea class="form__textarea" placeholder="Комментарий"></textarea>
+            <div class="form__help"></div>
+        </div>
+        <button type="submit" class="button form__button">Отправить</button>
+        <?php //TODO: Сообщение после отправки ?>
+        <div class="form__success">Спасибо!<br> Ваши данные успешно отправлены</div>
+    </form>
     <!--Введите свои параметры-->
     <form class="form form--parameters">
         <h3 class="form__title">Стажировка</h3>
