@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Название проекта</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/mobile-1800.css" rel="stylesheet">
+    <link href="css/mobile-960.css" rel="stylesheet">
+    <link href="css/mobile-730.css" rel="stylesheet">
+    <link href="css/mobile-480.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <header class="header js-header">
+            <div class="header__container">
+                <a class="header__logo" href="/">
+                    <img class="header__logo-img" src="img/logo.svg" width="229" height="47" alt="Логотип">
+                </a>
+                <button class="header__hamburger js-hamburger"><span></span></button>
+                <nav class="navigation js-navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item navigation__item--active">
+                            <a class="navigation__link" href="#">
+                                <svg class="navigation__icon" width="15" height="12"><use xlink:href="img/sprite.svg#socials-projects"></use></svg>
+                                <div class="navigation__text">Соц.проекты</div>
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">
+                                <svg class="navigation__icon" width="13" height="10"><use xlink:href="img/sprite.svg#partners"></use></svg>
+                                <div class="navigation__text">Партнерам</div>
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">
+                                <svg class="navigation__icon" width="14" height="12"><use xlink:href="img/sprite.svg#shop"></use></svg>
+                                <div class="navigation__text">Магазин</div>
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">
+                                <svg class="navigation__icon" width="14" height="9"><use xlink:href="img/sprite.svg#delivery"></use></svg>
+                                <div class="navigation__text">Доставка</div>
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">
+                                <svg class="navigation__icon" width="13" height="9"><use xlink:href="img/sprite.svg#price-list"></use></svg>
+                                <div class="navigation__text">Прайс-лист</div>
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">
+                                <svg class="navigation__icon" width="10" height="10"><use xlink:href="img/sprite.svg#phone"></use></svg>
+                                <div class="navigation__text">Контакты</div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <h1 class="visually-hidden">Надеть одежду. Корзина</h1>
+            <div class="top">
+                <div class="wrap top__wrap">
+                    <h2 class="title">Корзина</h2>
+                </div>
+            </div>
+            <div class="bag">
+                <div class="container bag__container">
+                    <form class="form form--parameters" id="form-bag">
+                        <div class="bag__top">
+                            <div class="bag__top-cell bag__empty"></div>
+                            <div class="bag__top-cell bag__top-cell--title">Наименование</div>
+                            <div class="bag__top-cell bag__top-cell--price">Сумма</div>
+                            <div class="bag__top-cell bag__top-cell--number">Кол-во</div>
+                            <div class="bag__top-cell bag__top-cell--delete">Удалить</div>
+                        </div>
+                        <ul class="bag__list">
+                            <li class="bag__item">
+                                <label class="checkbox">
+                                    <input type="checkbox" class="checkbox__input">
+                                    <span class="checkbox__indicator"></span>
+                                </label>
+                                <img class="bag__img" src="img/dev-img-2.png" width="46" height="54" alt="Фото товара">
+                                <div class="bag__title">Название товара</div>
+                                <div class="bag__price">7 890 РУБ</div>
+                                <div class="bag__number">
+                                    <input class="form__input bag__input" placeholder="1" type="number">
+                                </div>
+                                <button class="bag__delete" type="button">
+                                    <svg class="bag__delete-icon" width="13" height="13"><use xlink:href="img/sprite.svg#close"></use></svg>
+                                </button>
+                            </li>
+                            <?php //TODO: Этот пункт появляется при заказе меньше 2000 ?>
+                            <li class="bag__item bag__item--delivery">
+                                <div class="bag__empty"></div>
+                                <div class="bag__title">Доставка</div>
+                                <div class="bag__price">300 РУБ</div>
+                                <div class="bag__number"></div>
+                                <div class="bag__delete"></div>
+                            </li>
+                        </ul>
+                    </form>
+                    <div class="bag__bottom">
+                        <div class="bag__delivery">
+                            <div class="bag__delivery-top">
+                                <svg class="bag__delivery-icon" width="31" height="18"><use xlink:href="img/sprite.svg#delivery"></use></svg>
+                                Доставка
+                            </div>
+                            <div class="bag__delivery-text">
+                                Стоимость доставки - 300 рублей, при заказе от 2000 руб. - доставка <b>БЕСПЛАТНО</b>!
+                            </div>
+                        </div>
+                        <div class="bag__result">
+                            <div class="bag__final">
+                                Итого
+                                <span class="bag__final-price">19 890 РУБ</span>
+                            </div>
+                            <?php //TODO: При нажатии на кнопку сначала появляется попап с внесением размеров и адресом (см попап введите свои параметры) ?>
+                            <button class="button bag__button" type="submit" form="form-bag">Перейти к оплате</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__column">
+                    <div class="footer__block footer__block--nav">
+                        <h3 class="footer__title">Навигатор услуг</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Пошив штор</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Пошив одежды на заказ</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Свадебные платья</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Ремонт одежды</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Школьная форма</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Стирка и утюжка</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Ручная химчистка</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Изделия в наличии</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Мужские костюмы</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Вечерние платья</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Ремонт кожи и меха</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Мелкий ремонт</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Дизайн одежды</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Дизайн штор</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__block">
+                        <h3 class="footer__title">Социальные программы</h3>
+                        <p class="footer__text">«Надеть одежду» — это социально-активный проект.<br>
+                            Мы учим любить себя не только своих клиентов, но и помогаем тем, кто действительно в этом нуждается.
+                        </p>
+                        <a class="link" href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="footer__column">
+                    <div class="footer__block footer__block--contacts">
+                        <h3 class="footer__title">Контакты</h3>
+                        <ul class="footer__contacts">
+                            <li class="footer__contacts-item">
+                                <div class="footer__contacts-unit">адрес:</div>
+                                <div class="footer__contacts-value">Каменоостровский пр. 174 лит. Б</div>
+                            </li>
+                            <li class="footer__contacts-item">
+                                <div class="footer__contacts-unit">телефон:</div>
+                                <div class="footer__contacts-value">
+                                    <a class="footer__phone" href="tel:88127713233">8 812 771 32 33</a>
+                                </div>
+                            </li>
+                            <li class="footer__contacts-item">
+                                <div class="footer__contacts-unit">почта:</div>
+                                <div class="footer__contacts-value">
+                                    <a class="footer__mail" href="mailto:putonclothes@gmail.com" target="_blank">putonclothes@gmail.com</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="link" href="#">как добраться?</a>
+                    </div>
+                    <div class="footer__block footer__block--socials">
+                        <h3 class="footer__title">Подпишитесь на наши соцсети</h3>
+                        <ul class="socials">
+                            <li class="socials__item socials__item--inst">
+                                <a class="socials__link" href="#" target="_blank">
+                                    <svg class="socials__icon" width="37" height="37"><use xlink:href="img/sprite.svg#inst"></use></svg>
+                                </a>
+                            </li>
+                            <li class="socials__item socials__item--fb">
+                                <a class="socials__link" href="#" target="_blank">
+                                    <svg class="socials__icon" width="23" height="42"><use xlink:href="img/sprite.svg#fb"></use></svg>
+                                </a>
+                            </li>
+                            <li class="socials__item socials__item--vk">
+                                <a class="socials__link" href="#" target="_blank">
+                                    <svg class="socials__icon" width="51" height="30"><use xlink:href="img/sprite.svg#vk"></use></svg>
+                                </a>
+                            </li>
+                            <li class="socials__item socials__item--tel">
+                                <a class="socials__link" href="#" target="_blank">
+                                    <svg class="socials__icon" width="37" height="30"><use xlink:href="img/sprite.svg#tel"></use></svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="footer__text">В наших соцсетях мы ежедневно выкладываем отчеты о работе социальных проектов, интересные заказы и их выполнение, акции и скидки и многое другое, присоединяйтесь!</div>
+                    </div>
+                    <img class="footer__icon-text" src="img/footer-icon-text.svg" width="433" height="101" alt="Put on clothes">
+                </div>
+            </div>
+            <img class="footer__icon" src="img/footer-icon.svg" width="250" height="522" alt="Иконка костюма">
+        </footer>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
