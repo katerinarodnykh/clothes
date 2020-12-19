@@ -594,6 +594,8 @@ img {
 .about__item {
   flex-shrink: 0;
   max-width: 300px;
+  width: calc(100%/3);
+  padding: 0 5px;
 }
 
 .about__link {
@@ -620,6 +622,7 @@ img {
   color: var(--pink);
   text-align: center;
   margin: 0 0 10px 0;
+  letter-spacing: 0.01em;
 }
 
 /* Магазин */
@@ -1492,6 +1495,10 @@ img {
 
 /* Доставка */
 
+.delivery {
+  margin: 0 0 50px 0;
+}
+
 .delivery__container {
   display: flex;
   align-items: center;
@@ -1505,6 +1512,7 @@ img {
   text-transform: uppercase;
   color: var(--pink);
   margin: 0 40px 0 0;
+  max-width: 652px;
 }
 
 .delivery__img {
@@ -1620,6 +1628,7 @@ img {
 .delivery__bottom-icon {
   filter: drop-shadow(0px 0px 64px rgba(255, 144, 120, 0.9));
   margin: 0 10px 0 0;
+  flex-shrink: 0;
 }
 
 .delivery__bottom-link {
