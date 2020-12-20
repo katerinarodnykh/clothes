@@ -380,6 +380,25 @@ img {
   height: 18px;
 }
 
+.promo__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.promo--partners .button {
+  max-width: 430px;
+  flex-shrink: 0;
+}
+
+.promo__link {
+  font-weight: 500;
+  color: var(--pink);
+  text-transform: uppercase;
+  padding: 20px;
+  margin: 0 30px;
+  white-space: nowrap;
+}
+
 /* Соц. сети */
 
 .socials {
@@ -1575,6 +1594,7 @@ img {
   background-color: rgba(var(--grey-opacity), 0.5);
   padding: 50px;
   color: var(--dark);
+  flex-grow: 1;
 }
 
 .block__text {
@@ -1635,6 +1655,50 @@ img {
   text-transform: uppercase;
   text-decoration: underline;
   color: var(--pink);
+}
+
+/* Партнёры */
+
+.company .block__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.company .block__title {
+  max-width: 530px;
+}
+
+.company__bottom {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.company__icon {
+  position: absolute;
+  bottom: 70px;
+  left: 300px;
+}
+
+.company__bottom .block__title {
+  margin: 0 30px;
+}
+
+.company .block__text {
+  line-height: 26px;
+}
+
+.company__button {
+  max-width: unset;
+}
+
+.company .socials__item {
+  margin: 0 20px 0 0;
+}
+
+.company .socials__item:last-child {
+  margin: 0;
 }
 
 

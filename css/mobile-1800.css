@@ -42,6 +42,15 @@
     .block__img {
         display: none;
     }
+
+    .company__button {
+        display: inline-flex;
+        width: unset;
+    }
+
+    .company__icon {
+        display: none;
+    }
 }
 
 @media (max-width:1300px) {

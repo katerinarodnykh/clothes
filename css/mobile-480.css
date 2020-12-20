@@ -120,6 +120,36 @@
     .delivery__bottom-icon {
         display: none;
     }
+
+    .promo--partners .promo__title {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .promo__link {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .company .socials__item--inst .socials__icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .company .socials__item--fb .socials__icon {
+        width: 10px;
+        height: 20px;
+    }
+
+    .company .socials__item--vk .socials__icon {
+        width: 24px;
+        height: 14px;
+    }
+
+    .company .socials__item--tel .socials__icon {
+        width: 22px;
+        height: 18px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -133,5 +163,10 @@
 
     .form--parameters .form__input {
         margin: 0 10px 0 auto;
+    }
+
+    .promo--partners .promo__title {
+        font-size: 30px;
+        line-height: 36px;
     }
 }

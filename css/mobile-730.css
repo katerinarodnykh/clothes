@@ -162,6 +162,37 @@
     .block__content {
         padding: 40px 20px;
     }
+
+    .promo--partners .promo__title {
+        font-size: 44px;
+        line-height: 50px;
+    }
+
+    .promo--partners .button {
+        max-width: unset;
+    }
+
+    .promo--partners .promo__text {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0 0 30px 0;
+    }
+
+    .company__bottom {
+        flex-wrap: wrap;
+    }
+
+    .company .socials {
+        margin: 0 0 20px 0;
+    }
+
+    .company__bottom .block__title {
+        margin: 0 0 20px 14px;
+    }
+
+    .company .block__text {
+        line-height: 18px;
+    }
 }
 
 @media (max-width: 520px) {
