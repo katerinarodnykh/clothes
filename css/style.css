@@ -1430,9 +1430,9 @@ img {
 }
 
 .price-list__container {
-  width: 1014px;
+  width: 1074px;
   margin: 0 auto;
-  padding: 0 0 100px 0;
+  margin-bottom: 100px;
 }
 
 .accordion__item {
@@ -1718,8 +1718,12 @@ img {
 
 /* Сотрудничество */
 
-.tile {
+.tile--partners {
   margin-bottom: 100px;
+}
+
+.tile__container {
+  position: relative;
 }
 
 .tile__title {
@@ -1740,6 +1744,10 @@ img {
   margin: 0 0 45px 0;
 }
 
+.tile--single .tile__list {
+  grid-template-columns: 1fr;
+}
+
 .tile__item {
   min-height: 350px;
   height: 100%;
@@ -1749,6 +1757,7 @@ img {
   background-blend-mode: luminosity;
   background-color: #B2B2B2;
   transition: 0.2s;
+  z-index: 1;
 }
 
 .tile__item:after {
@@ -1825,6 +1834,27 @@ img {
 .tile__item:hover .tile__text {
   opacity: 1;
   transition: 0.4s
+}
+
+.tile--socials .tile__title {
+  padding: 40px;
+}
+
+.tile--single .tile__container {
+  max-width: 1074px;
+}
+
+.tile__button {
+  position: absolute;
+  bottom: 50px;
+  right: 70px;
+  display: inline-flex;
+  width: auto;
+  pointer-events: none;
+}
+
+.tile--single .tile__content {
+  width: 60%;
 }
 
 

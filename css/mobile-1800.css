@@ -66,7 +66,8 @@
         width: 90%;
     }
 
-    .tile__text {
+    .tile__text,
+    .tile--socials .tile__title {
         padding: 30px;
     }
 }
@@ -165,7 +166,7 @@
 }
 
 @media (max-width:1100px) {
-    .tile {
+    .tile--partners {
         margin-bottom: 50px;
     }
 
@@ -190,6 +191,11 @@
         font-size: 14px;
         line-height: 18px;
         width: 95%;
+    }
+
+    .tile--socials .tile__title {
+        font-size: 20px;
+        line-height: 24px;
     }
 }
 

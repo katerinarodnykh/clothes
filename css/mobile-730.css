@@ -194,7 +194,7 @@
         line-height: 18px;
     }
 
-    .tile {
+    .tile--partners {
         margin-bottom: 30px;
     }
 
@@ -214,6 +214,14 @@
 
     .tile__item:nth-child(4) {
         grid-column: auto;
+    }
+
+    .tile__button {
+        display: none;
+    }
+
+    .tile--single .tile__content {
+        width: 95%;
     }
 }
 

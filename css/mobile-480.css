@@ -151,7 +151,8 @@
         height: 18px;
     }
 
-    .tile__title {
+    .tile__title,
+    .tile--socials .tile__title {
         font-size: 20px;
         line-height: 24px;
         padding: 20px;
