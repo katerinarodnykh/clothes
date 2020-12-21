@@ -290,6 +290,13 @@ img {
   align-items: center;
   cursor: pointer;
   padding: 25px;
+  transition: 0.2s;
+}
+
+.navigation__item--active .navigation__link,
+.navigation__link:hover {
+  color: var(--pink);
+  transition: 0.2s;
 }
 
 .navigation__icon {
@@ -693,10 +700,17 @@ img {
   text-transform: uppercase;
   color: var(--pink);
   display: block;
+  transition: 0.2s;
 }
 
 .menu__item:first-child .menu__link {
   padding-top: 0;
+}
+
+.menu__item--active .menu__link,
+.menu__link:hover {
+  color: var(--grey);
+  transition: 0.2s;
 }
 
 .shop__content {
@@ -790,7 +804,8 @@ img {
   transform: rotate(180deg);
 }
 
-.pagination__link {
+.pagination__link,
+.pagination__item--arrow {
   display: flex;
   align-items: center;
   justify-content: center;
