@@ -193,6 +193,28 @@
     .company .block__text {
         line-height: 18px;
     }
+
+    .tile {
+        margin-bottom: 30px;
+    }
+
+    .tile__list {
+        grid-template-columns: 1fr;
+        grid-column-gap: unset;
+        margin: 0 0 30px 0;
+    }
+
+    .tile__title {
+        padding: 30px 30px 60px 30px;
+    }
+
+    .tile__item:first-child {
+        grid-row: auto;
+    }
+
+    .tile__item:nth-child(4) {
+        grid-column: auto;
+    }
 }
 
 @media (max-width: 520px) {

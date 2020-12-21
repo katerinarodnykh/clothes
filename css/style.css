@@ -107,6 +107,7 @@ ul {
   --grey: #B2B2B2;
   --grey-opacity: 178, 178, 178;
   --pink: #FBAB9A;
+  --pink-opacity: 251, 171, 154;
   --dark: #333333;
   --light: #f2f2f2;
 }
@@ -241,6 +242,10 @@ img {
 
 .button--left {
   margin: 0 0 0 auto;
+}
+
+.button--center {
+  margin: 0 auto;
 }
 
 .header {
@@ -1659,6 +1664,16 @@ img {
 
 /* Партнёры */
 
+.company {
+  position: relative;
+}
+
+.company__icon-text {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+
 .company .block__content {
   display: flex;
   flex-direction: column;
@@ -1699,6 +1714,117 @@ img {
 
 .company .socials__item:last-child {
   margin: 0;
+}
+
+/* Сотрудничество */
+
+.tile {
+  margin-bottom: 100px;
+}
+
+.tile__title {
+  font-family: "Poiret One", "Roboto", sans-serif;
+  color: var(--dark);
+  text-transform: uppercase;
+  padding: 40px 40px 10px 40px;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.tile__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin: 0 0 45px 0;
+}
+
+.tile__item {
+  min-height: 350px;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: luminosity;
+  background-color: #B2B2B2;
+  transition: 0.2s;
+}
+
+.tile__item:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(196, 190, 192, 0.6) 99.99%, rgba(255, 255, 255, 0) 100%);
+  z-index: -1;
+  transition: 0.2s;
+}
+
+.tile__item:first-child {
+  grid-row: 1 / 3;
+}
+
+.tile__item:nth-child(4) {
+  grid-column: 1 / 3;
+}
+
+.tile__link {
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.tile__item:hover {
+  background-blend-mode: normal;
+  transition: 0.2s;
+}
+
+.tile__item:hover:after {
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.tile__content {
+  margin: auto 0 0 0;
+  color: var(--dark);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+  width: 80%;
+}
+
+.tile__text {
+  padding: 40px;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.tile__content:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 13px;
+  height: 100%;
+  background-color: var(--pink);
+  transition: 0.4s;
+  z-index: -1;
+}
+
+.tile__item:hover .tile__content:after {
+  width: 100%;
+  transition: 0.4s;
+}
+
+.tile__item:hover .tile__text {
+  opacity: 1;
+  transition: 0.4s
 }
 
 

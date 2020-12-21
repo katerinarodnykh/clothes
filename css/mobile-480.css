@@ -150,6 +150,26 @@
         width: 22px;
         height: 18px;
     }
+
+    .tile__title {
+        font-size: 20px;
+        line-height: 24px;
+        padding: 20px;
+    }
+
+    .tile__text {
+        padding: 20px;
+    }
+
+    .tile--partners .tile__item {
+        background-image: unset !important;
+        background-color: rgba(var(--grey-opacity), 0.5);
+        min-height: unset;
+    }
+
+    .tile--partners .tile__content {
+        width: 100%;
+    }
 }
 
 @media (max-width: 400px) {
