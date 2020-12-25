@@ -223,6 +223,41 @@
     .tile--single .tile__content {
         width: 95%;
     }
+
+    .block__numbers {
+        flex-direction: column;
+    }
+
+    .block__number {
+        padding: 0 0 14px 0;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .block__number:last-child {
+        padding: 0;
+    }
+
+    .block__bottom {
+        flex-direction: column;
+    }
+
+    .block__text--small {
+        margin: 0 0 20px 0;
+    }
+
+    .block__partners-item {
+        margin: 0 10px 10px 0;
+        width: calc((100% - 20px)/3);
+    }
+
+    .block__partners-img {
+        height: auto;
+    }
+
+    .block__partners-item:nth-child(3n) {
+        margin: 0 0 10px 0;
+    }
 }
 
 @media (max-width: 520px) {
@@ -239,5 +274,9 @@
         margin: 0;
         order: 2;
         text-align: center;
+    }
+
+    .columns {
+        column-count: 1;
     }
 }

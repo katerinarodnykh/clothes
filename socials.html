@@ -5,7 +5,6 @@
     <title>Название проекта</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/tiny-slider.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/mobile-1800.css" rel="stylesheet">
     <link href="css/mobile-960.css" rel="stylesheet">
@@ -14,7 +13,7 @@
 </head>
 <body>
     <div class="main-container">
-        <header class="header js-header header--promo">
+        <header class="header js-header">
             <div class="header__container">
                 <a class="header__logo" href="/">
                     <img class="header__logo-img" src="img/logo.svg" width="229" height="47" alt="Логотип">
@@ -63,142 +62,117 @@
             </div>
         </header>
         <main class="main">
-            <h1 class="visually-hidden">Надеть одежду. Ателье и химчистка</h1>
-            <?php //TODO: Загружаемая картинка? ?>
-            <section class="promo" style="background-image: url('img/dev-img.png')">
-                <div class="wrapper promo__wrapper">
-                    <div class="promo__content">
-                        <h2 class="promo__title">Надеть одежду</h2>
-                        <div class="promo__text">Ателье & химчистка</div>
-                        <a class="button" href="#">Перейти в прайс-лист</a>
-                    </div>
-                    <ul class="socials">
-                        <li class="socials__item socials__item--inst">
-                            <a class="socials__link" href="#" target="_blank">
-                                <svg class="socials__icon" width="37" height="37"><use xlink:href="img/sprite.svg#inst"></use></svg>
-                            </a>
-                        </li>
-                        <li class="socials__item socials__item--fb">
-                            <a class="socials__link" href="#" target="_blank">
-                                <svg class="socials__icon" width="23" height="42"><use xlink:href="img/sprite.svg#fb"></use></svg>
-                            </a>
-                        </li>
-                        <li class="socials__item socials__item--vk">
-                            <a class="socials__link" href="#" target="_blank">
-                                <svg class="socials__icon" width="51" height="30"><use xlink:href="img/sprite.svg#vk"></use></svg>
-                            </a>
-                        </li>
-                        <li class="socials__item socials__item--tel">
-                            <a class="socials__link" href="#" target="_blank">
-                                <svg class="socials__icon" width="37" height="30"><use xlink:href="img/sprite.svg#tel"></use></svg>
-                            </a>
-                        </li>
-                    </ul>
+            <h1 class="visually-hidden">Надеть одежду. Социальные программы</h1>
+            <img class="socials-heart" src="img/heart.svg" width="606" height="359" alt="Руки держат сердце">
+            <div class="top">
+                <div class="wrap top__wrap">
+                    <h2 class="title">Социальные программы</h2>
                 </div>
-            </section>
-            <section class="about block">
-                <img class="about__icon" src="img/puton-text.svg" width="61" height="547" alt="Надеть одежду">
-                <div class="wrapper about__wrapper">
-                    <h3 class="subtitle">О нас</h3>
-                    <div class="about__description">
-                        «Надеть одежду» — это не просто ателье. Это проект новой формации, который создан для оптимизации твоего времени.
-                        Мы возьмем на себя все твои хлопоты: ремонт, чистку и утюжка одежды, поможем тебе сделать жизнь проще и приятнее!
-                    </div>
-                    <ul class="about__list">
-                        <li class="about__item">
-                            <a class="about__link" href="#">
-                                <img class="about__img" src="img/cleaning.svg" width="292" height="329" alt="Иконка химчистки">
-                                <h3 class="about__title">Химчистка</h3>
-                            </a>
-                        </li>
-                        <li class="about__item">
-                            <a class="about__link" href="#">
-                                <img class="about__img" src="img/sewing.svg" width="292" height="329" alt="Иконка пошива одежды">
-                                <h3 class="about__title">Пошив одежды</h3>
-                            </a>
-                        </li>
-                        <li class="about__item">
-                            <a class="about__link" href="#">
-                                <img class="about__img" src="img/repair.svg" width="292" height="329" alt="Иконка ремонта одежды">
-                                <h3 class="about__title">Ремонт одежды</h3>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="tile tile--socials block">
-                <div class="container tile__container">
-                    <h3 class="subtitle">Социальные програмы</h3>
-                    <ul class="tile__list">
-                        <li class="tile__item" style="background-image: url('img/pictures/picture-8.jpg')">
-                            <a class="tile__link" href="#">
-                                <div class="tile__content">
-                                    <h3 class="tile__title">Название социальной программы</h3>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="tile__item" style="background-image: url('img/pictures/picture-11.jpg')">
-                            <a class="tile__link" href="#">
-                                <div class="tile__content">
-                                    <h3 class="tile__title">Другое название в 2 строчки</h3>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="tile__item" style="background-image: url('img/pictures/picture-10.jpg')">
-                            <a class="tile__link" href="#">
-                                <div class="tile__content">
-                                    <h3 class="tile__title">Третье название</h3>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="sale block" style="display: none;">
-                <div class="container sale__container">
-                    <h2 class="title title--color">Акции и предложения</h2>
-                    <div class="price price--sale">
-                        <ul class="price__list">
-                            <li class="price__item">
-                                <div class="price__title">Подшив брюк</div>
-                                <div class="price__dots"></div>
-                                <div class="price__price price__price--old">1990 руб</div>
-                                <div class="price__price">990 руб</div>
-                            </li>
-                            <li class="price__item">
-                                <div class="price__title">Ремонт кожаных изделий</div>
-                                <div class="price__dots"></div>
-                                <div class="price__price price__price--old">190 руб</div>
-                                <div class="price__price">90 руб</div>
-                            </li>
-                        </ul>
-                    </div>
-                    <a class="button button--border sale__button" href="#">Перейти в прайс-лист</a>
-                    <img class="sale__icon" src="img/putontext-2.svg" width="64" height="548" alt="Надеть одежду">
-                </div>
-            </section>
-            <section class="reviews block">
-                <div class="container reviews__container">
-                    <ul class="reviews__list">
-                        <li class="reviews__item">
-                            <div class="reviews__title">Ольга Логинова</div>
-                            <div class="reviews__content">
-                                <div class="reviews__quote">&#8220;</div>
-                                <div class="reviews__text">Обратилась в ателье за пошивом свадебного платья и была очарована результатом. Сервис высочайшего класса, большое количество тканей, стилист от бога, видно, что любит свою работу и хорошо разбирается в моде. Я осталась очень довольна. Отдельное спасибо стилисту Екатерине.</div>
-                                <div class="reviews__quote reviews__quote--right">&#8221;</div>
+            </div>
+            <div class="projects">
+                <section class="block">
+                    <div class="container block__container">
+                        <div class="block__picture">
+                            <img class="block__img" src="img/pictures/picture-12.jpg" width="411" height="604" alt="Картинка">
+                        </div>
+                        <div class="block__content">
+                            <h3 class="block__title block__title--small">Сбор благотворительных денежных средств для пошива одежды для детских домов на некоммерческой основе.</h3>
+                            <div class="block__text">
+                                Как правило, волонтерские вакансии встречаются в социальных проектах, неправительственных организациях и благотворительных фондах. Далеко не всегда волонтерство предусматривает физическую работу или работу неоплачиваемую.
                             </div>
-                        </li>
-                        <li class="reviews__item">
-                            <div class="reviews__title">Имя Фамилия</div>
-                            <div class="reviews__content">
-                                <div class="reviews__quote">&#8220;</div>
-                                <div class="reviews__text">Другой отзыв</div>
-                                <div class="reviews__quote reviews__quote--right">&#8221;</div>
+                            <div class="block__numbers">
+                                <div class="block__number block__number--title">Уже собрано:</div>
+                                <div class="block__number color">14 543 руб</div>
+                                <div class="block__number color">130 метров ткани</div>
                             </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+                            <div class="block__numbers">
+                                <div class="block__number block__number--title">Уже отшито:</div>
+                                <div class="block__number color">252 изделия</div>
+                            </div>
+                            <div class="block__title block__title--small">Мы помогаем этим ребятам</div>
+                            <ul class="columns">
+                                <li class="columns__item">Детский дом №182</li>
+                                <li class="columns__item">Детский дом №188</li>
+                                <li class="columns__item">Детский дом №2</li>
+                                <li class="columns__item">Детский дом №182</li>
+                                <li class="columns__item">Детский дом №188</li>
+                                <li class="columns__item">Детский дом №2</li>
+                                <li class="columns__item">Детский дом №182</li>
+                            </ul>
+                            <div class="block__text">
+                                Если Вы хотите оказать материальную поддержку деятельности проекта, Вы можете сделать это нажав на кнопку ниже.
+                            </div>
+                            <div class="block__bottom">
+                                <div class="block__text block__text--small color">Также вы можете помочь другим способом, например, пожертвовать ткань, фурнитуру и другое...</div>
+                                <button class="button button--left">Пожертвовать</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="block">
+                    <div class="container block__container">
+                        <div class="block__content">
+                            <h3 class="block__title block__title--small">Сбор одежды в антивандальные контейнеры</h3>
+                            <div class="block__text">
+                                Спасибо за то, что вы решили с пользой отдать ненужные вещи! Отдать одежду даром – это, наверное, один из самых простых и приятных способов помочь. Мы работаем с одеждой с 2010 года, чтобы передавать одежду нуждающимся в поддержке и собирать деньги для благотворительных организаций. О результатах нашей работы можно узнать здесь.
+                            </div>
+                            <h3 class="block__title block__title--small">Партнёры:</h3>
+                            <ul class="block__partners">
+                                <li class="block__partners-item">
+                                    <a class="block__partners-link" href="#">
+                                        <img class="block__partners-img" src="img/social-partner.jpg" width="120" height="120" alt="Лого партнёра">
+                                    </a>
+                                </li>
+                                <li class="block__partners-item">
+                                    <a class="block__partners-link" href="#">
+                                        <img class="block__partners-img" src="img/social-partner.jpg" width="120" height="120" alt="Лого партнёра">
+                                    </a>
+                                </li>
+                                <li class="block__partners-item">
+                                    <a class="block__partners-link" href="#">
+                                        <img class="block__partners-img" src="img/social-partner.jpg" width="120" height="120" alt="Лого партнёра">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="block__picture">
+                            <img class="block__img" src="img/pictures/picture-13.jpg" width="411" height="494" alt="Картинка">
+                        </div>
+                    </div>
+                </section>
+                <section class="block">
+                    <div class="container block__container">
+                        <div class="block__picture">
+                            <img class="block__img" src="img/pictures/picture-14.jpg" width="411" height="562" alt="Картинка">
+                        </div>
+                        <div class="block__content">
+                            <h3 class="block__title block__title--small">Cтажировка студентов</h3>
+                            <div class="block__text">
+                                <p>Ты хочешь развиваться в сфере дизайна одежды или аксессуаров?<p>
+                                <p>Мы знаем, что без опыта не попасть в крупную компанию. А зачем? Ты можешь развиваться с нами.<p>
+                                <p>Практикуйся, стажируйся, создавай своё!</p>
+                            </div>
+                            <h3 class="block__title block__title--small">Стажёр - администратор с функциями швеи</h3>
+                            <div class="block__text">
+                                <p>График: неполный рабочий день</p>
+                                <p>⁃ З.П. от 15 т.р.</p>
+                                <p>⁃ Приём/выдача заказов</p>
+                                <p>⁃ Мелкий ремонт одежды</p>
+                                <p>⁃ Общение с клиентами</p>
+                            </div>
+                            <button class="button button--left">Оставить заявку</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="video">
+                    <div class="block">
+                        <h3 class="subtitle">Посмотрите видеотчет<br> о дейтельности нашего проекта</h3>
+                        <div class="video__container">
+                            <iframe class="video__frame" src="https://www.youtube.com/embed/5Uy7uWyFb48" width="890" height="500" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </main>
         <footer class="footer">
             <div class="container footer__container">
@@ -313,22 +287,7 @@
             <img class="footer__icon" src="img/footer-icon.svg" width="250" height="522" alt="Иконка костюма">
         </footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="plugins/jquery-3.5.1.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script>
-        const reviewsSlider = tns({
-            container: '.reviews__list',
-            mode: 'gallery',
-            items: 1,
-            loop: true,
-            autoplay: false,
-            autoplayTimeout: 5000,
-            autoplayHoverPause: true,
-            speed: 1000,
-            mouseDrag: true,
-            controls: false,
-            nav: false
-        });
-    </script>
 </body>
 </html>

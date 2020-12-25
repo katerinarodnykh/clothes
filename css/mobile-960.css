@@ -67,4 +67,13 @@
     .company .socials__item {
         margin: 0;
     }
+
+    .block__number {
+        width: unset;
+        padding: 0 20px 0 0;
+    }
+
+    .columns {
+        column-count: 2;
+    }
 }

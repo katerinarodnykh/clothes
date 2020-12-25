@@ -559,6 +559,8 @@ img {
 
 .block {
   padding: 50px 0;
+  z-index: 2;
+  position: relative;
 }
 
 .about {
@@ -924,6 +926,11 @@ img {
   top: 10vh;
   left: 50%;
   margin-left: -290px;
+  display: none;
+}
+
+.modal.is-open {
+  display: block;
 }
 
 .modal__container {
@@ -1127,7 +1134,7 @@ img {
   left: 4px;
 }
 
-.overlay {
+.modal__overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -1141,7 +1148,7 @@ img {
 
 @-moz-document url-prefix()
 {
-  .overlay {
+  .modal__overlay {
     background-color: rgba(var(--black-opacity), 0.5);
   }
 }
@@ -1606,8 +1613,14 @@ img {
   display: flex;
 }
 
-.block__img {
+.block__picture {
   flex-shrink: 0;
+}
+
+.block__img {
+  display: block;
+  object-fit: cover;
+  height: 100%;
 }
 
 .block__content {
@@ -1870,6 +1883,142 @@ img {
 
 .tile--single .tile__content {
   width: 60%;
+}
+
+/* Социальные программы */
+
+.socials-heart {
+  position: absolute;
+  top: 145px;
+  right: 0;
+}
+
+.projects .block:first-child .block__content {
+  background-color: #7B7B7B;
+}
+
+.block__numbers {
+  display: flex;
+  margin: 0 0 30px 0;
+}
+
+.block__number {
+  font-family: "Poiret One", "Roboto", sans-serif;
+  width: calc(100%/3);
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  padding: 0 10px 0 0;
+  text-transform: uppercase;
+}
+
+.block__number--title {
+  font-weight: 400;
+}
+
+.columns {
+  column-count: 3;
+  column-gap: 20px;
+  margin: 0 0 30px 0;
+}
+
+.block__bottom {
+  display: flex;
+  align-items: center;
+}
+
+.block__text--small {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 20px 0 0;
+}
+
+.block__partners {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block__partners-link,
+.block__partners-img {
+  display: block;
+  flex-shrink: 0;
+}
+
+.block__partners-item {
+  margin: 0 30px 20px 0;
+}
+
+.video {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.video__container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.video__frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-width: 0;
+  outline-width: 0;
+}
+
+/* Слайдер отзывов на главной */
+
+.reviews {
+  text-align: center;
+}
+
+.reviews__container {
+  max-width: 620px;
+}
+
+.reviews__title {
+  font-family: "Poiret One", "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 0 20px 0;
+  font-weight: 700;
+}
+
+.reviews__content {
+  display: inline-block;
+}
+
+.reviews__text {
+  position: relative;
+  padding: 0 20px;
+  line-height: 26px;
+}
+
+.reviews__quote {
+  position: relative;
+  font-size: 34px;
+  line-height: 34px;
+  color: var(--pink);
+  font-weight: 700;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.reviews__quote--right {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.reviews button[data-action] {
+  display: none;
 }
 
 
