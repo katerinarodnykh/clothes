@@ -40,6 +40,34 @@
     .company__icon-text {
         display: none;
     }
+
+    .shop__list {
+        justify-content: center;
+    }
+
+    .shop__item {
+        padding: 0 20px 40px 20px;
+    }
+
+    .menu {
+        width: 370px;
+    }
+
+    .menu__link {
+        font-size: 20px;
+        line-height: 24px;
+        padding: 10px 0;
+    }
+
+    .price-list__icon {
+        display: none;
+    }
+}
+
+@media (max-width:1530px) {
+    .sale__icon {
+        display: none;
+    }
 }
 
 @media (max-width:1370px) {
@@ -149,6 +177,42 @@
     .about--delivery .about__title {
         margin: 0 0 20px 0;
     }
+
+    .product__visual {
+        margin: 0 30px 0 0;
+    }
+
+    .product__title {
+        font-size: 22px;
+        line-height: 24px;
+        margin: 0 0 24px 0;
+    }
+
+    .product__price {
+        font-size: 22px;
+        line-height: 24px;
+        margin: 0 0 24px 0;
+    }
+
+    .product__item,
+    .product__text {
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 0 14px 0;
+    }
+
+    .product__list {
+        margin: 0 0 30px 0;
+    }
+
+    .product__button {
+        margin: 0 0 30px 0;
+    }
+
+    .product__description {
+        font-size: 16px;
+        line-height: 22px;
+    }
 }
 
 @media (max-width:1200px) {
@@ -176,9 +240,35 @@
     .block__numbers {
         margin: 0 0 20px 0;
     }
+
+    .menu {
+        width: 300px;
+    }
+
+    .pagination__link,
+    .pagination__item--arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .pagination__item--number {
+        margin: 0 5px;
+    }
 }
 
 @media (max-width:1100px) {
+    .title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .subtitle {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
     .tile--partners {
         margin-bottom: 50px;
     }
@@ -209,6 +299,98 @@
     .tile--socials .tile__title {
         font-size: 20px;
         line-height: 24px;
+    }
+
+    .price--sale {
+        margin-bottom: 40px;
+    }
+
+    .price-list__container {
+        margin-bottom: 0;
+    }
+
+    .price__item {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0 0 20px 0;
+    }
+
+    .price__price {
+        min-width: 100px;
+        padding: 0 0 0 10px;
+    }
+
+    .accordion__content {
+        padding: 20px 46px 20px 46px;
+    }
+
+    .accordion__item {
+        margin: 0 0 20px 0;
+    }
+
+    .accordion__head {
+        font-size: 16px;
+        line-height: 20px;
+        min-height: 60px;
+        padding: 10px 50px 10px 20px;
+    }
+
+    .accordion__head:after {
+        right: 20px;
+    }
+
+    .price__title {
+        margin: 0 10px 0 0;
+    }
+
+    .sale__container {
+        padding: 40px 15px;
+    }
+
+    .sale .title {
+        margin: 0 0 40px 0;
+    }
+
+    .bag__title {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .bag__price {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .bag__price,
+    .bag__top-cell--price, .bag__price {
+        width: 120px;
+    }
+
+    .bag__number,
+    .bag__top-cell--number, .bag__number {
+        width: 100px;
+    }
+
+    .bag__delivery-top {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .bag__delivery-text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .bag__final {
+        font-size: 16px;
+        line-height: 20px;
+        height: 50px;
+    }
+
+    .bag__final-price {
+        font-size: 20px;
+        line-height: 24px;
+        padding: 0 0 0 14px;
     }
 }
 
@@ -259,7 +441,7 @@
 
     .header__hamburger span {
         width: 100%;
-        background-color: var(--white);
+        background-color: var(--grey);
         height: 2px;
         display: block;
         position: relative;

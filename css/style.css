@@ -683,6 +683,10 @@ img {
   fill: var(--pink);
 }
 
+.purchases__number {
+  text-align: center;
+}
+
 .shop__wrap {
   display: flex;
 }
@@ -738,6 +742,10 @@ img {
   margin: 0 0 15px 0;
 }
 
+.shop__img {
+  display: block;
+}
+
 .shop__bag {
   position: absolute;
   width: 50px;
@@ -768,6 +776,11 @@ img {
   font-size: 20px;
   line-height: 22px;
   margin: 0 0 15px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-box-pack: center;
 }
 
 .shop__bottom {
@@ -866,7 +879,10 @@ img {
 }
 
 .product__visual {
-  width: 590px;
+  width: 50%;
+  max-width: 590px;
+  flex-shrink: 0;
+  margin: 0 40px 0 0;
 }
 
 .product__content {
@@ -1359,7 +1375,8 @@ img {
 
 .bag__result {
   padding: 70px 0 0 0;
-  width: 330px;
+  width: 100%;
+  max-width: 330px;
 }
 
 .bag__final {
@@ -1408,7 +1425,6 @@ img {
 .price__title {
   color: var(--grey);
   text-transform: uppercase;
-  flex-shrink: 0;
   margin: 0 20px 0 0;
 }
 
@@ -1452,7 +1468,8 @@ img {
 }
 
 .price-list__container {
-  width: 1074px;
+  width: 100%;
+  max-width: 1074px;
   margin: 0 auto;
   margin-bottom: 100px;
 }
@@ -1472,7 +1489,7 @@ img {
   text-transform: uppercase;
   position: relative;
   cursor: pointer;
-  padding: 10px 46px;
+  padding: 10px 60px 10px 46px;
 }
 
 .accordion__head:after {

@@ -79,7 +79,7 @@
         line-height: 20px;
     }
 
-    .modal {
+    .modal__container {
         max-width: unset;
         top: 0;
         left: 0;
@@ -94,7 +94,8 @@
         height: 20px;
     }
 
-    .form__title {
+    .form__title,
+    .modal__title {
         font-size: 30px;
         line-height: 34px;
         margin: 0 0 20px 0;
@@ -257,6 +258,135 @@
 
     .block__partners-item:nth-child(3n) {
         margin: 0 0 10px 0;
+    }
+
+    .menu {
+        margin: 0 0 14px 0;
+    }
+
+    .menu__link {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 0 14px 14px 0;
+    }
+
+    .purchases {
+        font-size: 14px;
+        line-height: 16px;
+        padding: 10px 5px;
+        height: 70px;
+        right: 15px;
+        width: 40px;
+    }
+
+    .price--sale {
+        margin-bottom: 30px;
+    }
+
+    .sale .price--sale {
+        margin-bottom: 40px;
+    }
+
+    .price__item {
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 0 14px 0;
+    }
+
+    .accordion__item {
+        margin: 0 0 14px 0;
+    }
+
+    .accordion__content {
+        padding: 14px 14px 5px 14px;
+    }
+
+    .accordion__head {
+        font-size: 14px;
+        line-height: 18px;
+        min-height: 50px;
+        padding: 10px 30px 10px 15px;
+    }
+
+    .accordion__head::after {
+        right: 14px;
+        margin-top: -4px;
+        border: 6px solid transparent;
+        border-top: unset;
+        border-top: 7px solid var(--pink);
+    }
+
+    .accordion-item.show .accordion-item-header::after {
+        margin-top: -4px;
+        border: 6px solid transparent;
+        border-top: unset;
+        border-bottom: 7px solid var(--pink);
+    }
+
+    .price__price {
+        min-width: 80px;
+    }
+
+    .bag__top {
+        display: none;
+    }
+
+    .bag__item {
+        height: unset;
+        min-height: 50px;
+        margin: 0 0 14px 0;
+    }
+
+    .checkbox,
+    .bag__delete {
+        width: 50px;
+    }
+
+    .bag__number {
+        width: 40px;
+    }
+
+    .bag .form--parameters .form__input {
+        width: 30px;
+    }
+
+    .bag__price {
+        font-size: 12px;
+        line-height: 16px;
+        width: 90px;
+    }
+
+    .bag__title {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 0 10px 0 0;
+    }
+
+    .bag__list {
+        margin: 0 0 40px 0;
+    }
+
+    .bag__bottom {
+       flex-direction: column;
+    }
+
+    .bag__delivery {
+        width: 100%;
+    }
+
+    .bag__delivery-top {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .bag__delivery-text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .bag__result {
+        padding: 40px 0 0 0;
+        margin: 0 auto;
     }
 }
 
