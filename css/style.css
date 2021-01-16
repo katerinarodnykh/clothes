@@ -933,15 +933,6 @@ img {
 /* Модальное окно */
 
 .modal {
-  width: 100%;
-  max-width: 580px;
-  background-color: rgba(var(--black-opacity), 0.8);
-  padding: 50px 15px;
-  z-index: 10000;
-  position: absolute;
-  top: 10vh;
-  left: 50%;
-  margin-left: -290px;
   display: none;
 }
 
@@ -950,6 +941,20 @@ img {
 }
 
 .modal__container {
+  max-width: 580px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: rgba(var(--black-opacity), 0.8);
+  padding: 50px 15px;
+  position: absolute;
+  top: 10vh;
+  left: 50%;
+  margin-left: -290px;
+  z-index: 10000;
+}
+
+.modal__header,
+.modal__content {
   max-width: 390px;
   margin: 0 auto;
 }
@@ -972,7 +977,8 @@ img {
 
 /* Формы */
 
-.form__title {
+.form__title,
+.modal__title {
   font-family: "Poiret One", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -1160,6 +1166,7 @@ img {
   background-color: rgba(var(--black-opacity), 0.3);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  overflow: scroll;
 }
 
 @-moz-document url-prefix()
@@ -2036,6 +2043,22 @@ img {
 
 .reviews button[data-action] {
   display: none;
+}
+
+.registration {
+  margin: 0 150px;
+}
+
+.registration__heading {
+  margin-bottom: 30px;
+}
+
+.registration__wrapper {
+  padding: 150px;
+}
+
+.registration__bottom {
+  margin-bottom: 20px;
 }
 
 
